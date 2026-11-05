@@ -250,6 +250,24 @@ body::before {
     padding-left: 17px;
     margin-bottom: 18px;
 }
+.tl-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid rgba(176, 141, 87, .35);
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .12);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.tl-item img:hover {
+    transform: translateY(-3px) scale(2.5);
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .2);
+}
 .tl-item::before {
     content: '';
     position: absolute;
